@@ -1,16 +1,26 @@
 * {
     padding: 0px;
     margin: 0px;
-    background-color: black;
     color: white;
     font-family:'Courier New', Courier, monospace;
 }
+body {
+    background-color: black;
+}
 
-.footer {
-    position: absolute;
+.center {
+    position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
+}
+
+#title {
+    font-size: 100px;
+}
+
+.footer {
+    font-size: 20px;
 }
 
 .link {
