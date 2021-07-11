@@ -1,19 +1,11 @@
 var outer = document.getElementById("items");
 var puzzles = [];
 window.onload = function() {
-    getPuzzles();
 }
 
-
-function getPuzzles() { // not tested
-    var tmp = getCookie("items").split("øπø");
-    if (tmp == "") return;
-    for (let val in tmp) {
-        val = val.split("√∫√");
-        val[6] = val[6].split("∑∑∑");
-        puzzles.push(val);
-    }
-    return;
+document.getElementById("admin").onclick = function() {
+    var password = window.prompt("What is the admin password?");
+    if (password === PASSWORD) console.log("yes");
 }
 
 function render() {
