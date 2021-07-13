@@ -21,7 +21,6 @@ body {
 
 .footer {
     font-size: 20px;
-    padding-top: 75px;
 }
 
 .link {
@@ -38,7 +37,6 @@ body {
     font-family: "Merienda", 'Courier New';
     text-align: center;
     font-size: 40px;
-    padding-top: 20vh;
 }
 
 .puzzle-date {
@@ -54,7 +52,7 @@ body {
     padding-bottom: 15px;
 }
 
-
 .puzzle-img {
     max-width: 50%;
+    padding-bottom: 20vh;
 }
