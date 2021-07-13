@@ -48,11 +48,13 @@ body {
 }
 
 .puzzle-tags {
-    font-family: "STIX Two Math", 'Courier New';
+    padding-bottom: 15px;
 }
 .puzzle-desc {
-    font-family: "STIX Two Math", 'Courier New';
+    padding-bottom: 15px;
 }
+
+
 .puzzle-img {
     max-width: 50%;
 }
