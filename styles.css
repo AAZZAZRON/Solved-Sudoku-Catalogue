@@ -9,9 +9,9 @@ body {
 }
 
 .center {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
@@ -21,8 +21,38 @@ body {
 
 .footer {
     font-size: 20px;
+    padding-top: 75px;
 }
 
 .link {
     color: rgb(45, 122, 194);
+}
+
+#posts {
+    margin: auto;
+    width: 80%;
+    text-align: justify;
+}
+
+.puzzle-title {
+    font-family: "Merienda", 'Courier New';
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20vh;
+}
+
+.puzzle-date {
+    font-family: "Merienda", 'Courier New';
+    text-align: right;
+    padding-right: 100px;
+}
+
+.puzzle-tags {
+    font-family: "STIX Two Math", 'Courier New';
+}
+.puzzle-desc {
+    font-family: "STIX Two Math", 'Courier New';
+}
+.puzzle-img {
+    max-width: 50%;
 }
