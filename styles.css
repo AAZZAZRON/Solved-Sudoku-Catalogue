@@ -1,5 +1,6 @@
 * {
     padding: 0px;
+    padding-bottom: 15px;
     margin: 0px;
     color: white;
     font-family:'Courier New', Courier, monospace;
@@ -46,10 +47,8 @@ body {
 }
 
 .puzzle-tags {
-    padding-bottom: 15px;
 }
 .puzzle-desc {
-    padding-bottom: 15px;
 }
 
 .puzzle-img {
