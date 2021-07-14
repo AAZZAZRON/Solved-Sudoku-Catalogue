@@ -15,6 +15,7 @@ window.onload = function() {
     }
     filters = Array.from(filters);
     console.log(filters);
+    filters.sort();
 
     // add filters
     for (let i = 0; i < filters.length; i += 1) {
