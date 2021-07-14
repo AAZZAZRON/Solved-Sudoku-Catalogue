@@ -59,3 +59,54 @@ body {
     max-width: 50%;
     padding-bottom: 20vh;
 }
+
+#overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0px;
+}
+
+#items {
+    display: block;
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    margin-left: 80%;
+}
+
+#select-box {
+    position: relative;
+    padding: 0px;
+}
+
+#select-box select {
+    width: 100%;
+    font-size: 24px;
+    background-color: gray;
+}
+
+#tags {
+    padding: 0px;
+    background-color: gray;
+    position: absolute;
+    display: none;
+    width: 250px;
+    border: 1px rgb(78, 78, 78) solid;
+    box-shadow: 0px 2px 5px rgb(78, 78, 78);
+}
+
+#tags label {
+    display: block;
+    padding: 3px 3px;
+}
+
+#tags label:hover {
+    background-color: white;
+}
+
+#tags input {
+    margin-right: 8px;
+}

@@ -2,6 +2,7 @@ var filters = new Set();
 var num;
 var sudokus;
 checkboxes = [];
+
 window.onload = function() {
     num = document.getElementById("posts").children[0].id.split("-")[1];
     num = parseInt(num);
@@ -16,17 +17,27 @@ window.onload = function() {
     console.log(filters);
 
     // add filters
-    for (let i in filters) {
+    for (let i = 0; i < filters.length; i += 1) {
         let label = document.createElement("label");
-        label.innerText = filters[i];
         let input = document.createElement("input");
+        let text = document.createElement("text");
+        text.className = "text";
+        text.innerText = filters[i];
         input.type = "checkbox";
         input.name = filters[i];
+        
 
         label.appendChild(input);
+        label.appendChild(text);
         document.getElementById("tags").appendChild(label);
         input.onclick = applyChanges;
         checkboxes.push(input);
+    }
+
+    // set up filter button
+    document.getElementById("overSelect").onclick = function() {
+        if (document.getElementById("tags").style.display == "block") document.getElementById("tags").style.display = "none";
+        else document.getElementById("tags").style.display = "block";
     }
 }
 
