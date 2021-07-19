@@ -4,6 +4,7 @@ var sudokus;
 checkboxes = [];
 
 window.onload = function() {
+    $('html, body').animate({ scrollTop: 0}, 1);
     num = document.getElementById("posts").children[0].id.split("-")[1];
     num = parseInt(num);
     sudokus = document.getElementById("posts").children;
