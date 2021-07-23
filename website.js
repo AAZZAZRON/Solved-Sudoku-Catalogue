@@ -63,6 +63,6 @@ function applyChanges() {
         else sudokus[i].style.display = "none";
     }
 
-    $('html, body').animate({ scrollTop: window.innerHeight}, 1500);
+    $('html, body').animate({ scrollTop: window.innerHeight}, 1);
 
 }
