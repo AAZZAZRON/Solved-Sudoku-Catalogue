@@ -1,0 +1,27 @@
+{
+  "name": "solved-sudoku-catalogue",
+  "version": "1.0.0",
+  "description": "A library for AAZZAZRON's solved sudoku puzzles.",
+  "main": "website.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAZZAZRON/Solved-Sudoku-Catalogue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AAZZAZRON/Solved-Sudoku-Catalogue/issues"
+  },
+  "homepage": "https://github.com/AAZZAZRON/Solved-Sudoku-Catalogue#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "dotenv": "^15.0.0"
+  }
+}

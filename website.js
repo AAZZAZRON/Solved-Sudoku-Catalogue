@@ -4,6 +4,8 @@ var sudokus;
 checkboxes = [];
 
 window.onload = function() {
+    var res = fetchAsync();
+    console.log(res);
     $('html, body').animate({ scrollTop: 0}, 1);
     num = document.getElementById("posts").children[0].id.split("-")[1];
     num = parseInt(num);
@@ -41,6 +43,14 @@ window.onload = function() {
         if (document.getElementById("tags").style.display == "block") document.getElementById("tags").style.display = "none";
         else document.getElementById("tags").style.display = "block";
     }
+}
+
+async function fetchAsync() {
+    let response = await(axios({
+        method: 'get',
+        url: 'https://solved-sudoku-api.herokuapp.com/sudoku'
+    }));
+    return JSON.parse(response);
 }
 
 function applyChanges() {
