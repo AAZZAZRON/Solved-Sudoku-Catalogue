@@ -46,11 +46,10 @@ window.onload = function() {
 }
 
 async function fetchAsync() {
-    let response = await(axios({
-        method: 'get',
-        url: 'https://solved-sudoku-api.herokuapp.com/sudoku'
-    }));
-    return JSON.parse(response);
+    axios.get('https://solved-sudoku-api.herokuapp.com/sudoku').then((response) => {
+        console.log(response);
+        return JSON.parse(response);
+    });
 }
 
 function applyChanges() {
